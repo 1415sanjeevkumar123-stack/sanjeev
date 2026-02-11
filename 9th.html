@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    first num <input type="text" name="" id="fno">
+    <br/><br/>
+    second num <input type="text" name="" id="sno">
+    <br/><br/>
+    <button onclick="sum();">sum</button></button>
+    &nbsp;&nbsp;
+    <button onclick="difference();">difference</button>
+    &nbsp;&nbsp;
+    <button onclick="multiply();">multiply</button>
+  
+    &nbsp;&nbsp;
+    <button onclick="division();">division</button>
+  
+  <script>
+function sum(){
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let summation = parseInt(fno) + parseInt(sno);
+    alert("sum is " + summation)
+}
+function difference(){
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let difference = parseInt(fno) - parseInt(sno);
+    alert("diff is " + difference)
+}
+function multiply(){
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let multiply = parseInt(fno) * parseInt(sno);
+    alert("multiply is " +multiply)
+}
+function division(){
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let division = parseInt(fno) / parseInt(sno);
+    alert("div is " + division)
+}
+    </script>
+</body>
+</html>

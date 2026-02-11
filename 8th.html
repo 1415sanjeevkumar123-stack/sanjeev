@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    first num <input type="text" name="" id="fno">
+    <br/><br/>
+    second num <input type="text" name="" id="sno">
+    <br/><br/>
+    <button onclick="sum();">sum</button></button>
+    &nbsp;&nbsp;
+    <button onclick="difference();">difference</button>
+  
+  <script>
+function sum(){
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let summation = parseInt(fno) + parseInt(sno);
+    alert("sum is " + summation)
+}
+function difference(){
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let difference = parseInt(fno) - parseInt(sno);
+    alert("diff is " + difference)
+}
+    </script>
+</body>
+</html>
